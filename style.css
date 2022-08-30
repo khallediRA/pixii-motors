@@ -1,0 +1,168 @@
+@font-face {
+    font-family: "ethnocentric";
+    src: url("./assets/Typographie/ethnocentric\ rg.otf") format("woff");
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    list-style: none;
+}
+
+body {
+    font-family: "Poppins";
+    background-color: black;
+}
+.pixii-caresteristique {
+    position: relative;
+    width: 100%;
+}
+.pixii-carestique-img {
+    position: absolute;
+    width: 300px;
+    object-fit: cover;
+    top: 0;
+    right: 0;
+    z-index: -1;
+    filter: blur(80px);
+}
+.pixii-carestique-img-2 {
+    position: absolute;
+    width: 300px;
+    object-fit: cover;
+    z-index: -1;
+    top: 0;
+    left: 0;
+    filter: blur(20px);
+}
+.pixii-team-img {
+    width: 200px;
+    object-fit: cover;
+    mask-image: linear-gradient(to top, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.9) 100%);
+    -webkit-mask-image: linear-gradient(to top, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.9) 100%);
+}
+
+a {
+    text-decoration: none;
+}
+
+.navbar .logo {
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+.motors-suite {
+    position: relative;
+    width: 100%;
+    object-fit: cover;
+    margin-top: 0;
+    max-height: 800px;
+    margin-top: -30px;
+}
+header {
+    height: 150px;
+}
+.pixii-title {
+    position: relative;
+    background-image: url("./assets/Circle\ green-min.png");
+    background-position: start;
+    background-size: cover;
+    margin-left: -5%;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    z-index: 1;
+}
+.contact-us-btn {
+    background-color: transparent;
+    color: rgba(255, 255, 255, 0.651);
+    border: 1px solid rgb(84, 66, 247);
+    padding: 10px 20px 10px 20px;
+    border-radius: 20px;
+    box-shadow: 1px 5px 5px rgb(84, 66, 247);
+}
+
+.contact-us-btn:hover {
+    -webkit-transform: translateY(0px);
+    transition-duration: 0.5s;
+    transform: translateY(-12px);
+    box-shadow: 13px 17px 17px rgb(84, 66, 247);
+}
+.pixii-motors-2 {
+    position: relative;
+}
+.pixii-form {
+    background-color: transparent;
+    border-radius: 15px;
+    color: wheat;
+}
+.pixii-form-btn {
+    background-color: white;
+    border: 0.1px solid black;
+    margin-top: 10px;
+    font-weight: bold;
+    border-radius: 10px;
+    padding: 10px 0px 10px 0px;
+}
+.pixii-team-card {
+    border-radius: 20px;
+    width: 15rem;
+    max-width: 15rem;
+    position: relative;
+}
+.pixii-team-text {
+    position: absolute;
+    bottom: 0;
+    width: 15rem;
+    max-width: 15rem;
+    padding: 0 10px 10px 0;
+}
+
+.pixii-team-card > img {
+    object-fit: cover;
+    border-radius: 20px;
+    width: 15rem;
+
+    height: 20rem;
+    mask-image: linear-gradient(to top, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.9) 100%);
+    -webkit-mask-image: linear-gradient(to top, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.9) 100%);
+    z-index: -1;
+}
+
+@media screen and (max-width: 900px) {
+    .pixii-team-img {
+        width: 150px;
+    }
+    .pixii-title {
+        margin-left: 0;
+    }
+
+    .pixii-carestique-img {
+        display: none;
+    }
+
+    .pixii-nav-links {
+        top: 0;
+        left: 0;
+        position: absolute;
+        background-color: rgba(255, 251, 251, 0.048);
+        backdrop-filter: blur(8px);
+        width: 100%;
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-left: 100%;
+        transition: all 0.5s ease;
+    }
+
+    .pixii-nav-links.mobile-menu {
+        margin-left: 0;
+    }
+
+    .pixii-nav-links ul {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+}
